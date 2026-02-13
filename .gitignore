@@ -1,0 +1,37 @@
+#c++/c executables
+*.exe
+a.out
+*.out
+*.out
+*.obj
+#python
+*.pyc
+*.pyt
+*.pyd
+
+##editor junk
+*.swp
+.vscode/
+.idea/
+
+##common custom names
+hello
+ope
+os
+ptrs
+rrs-os
+main
+minibank
+name
+oops
+opps
+ptrs
+swap
+task1
+task2
+task3
+task4
+task5
+task6
+
+
