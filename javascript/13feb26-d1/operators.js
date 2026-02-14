@@ -33,6 +33,8 @@ console.log("e ** a =", e ** a); //it will give the result of e raised to the po
 
 let x = -10;
 let z = 5;
+let k = "5";
+let m = 5;
 let s = 5.8;
 let y = "Nitin";
 let w = false;
@@ -40,11 +42,16 @@ let v = true;
 let u = null;
 let t = undefined;
 
+console.log("k == m =", k == m); // it will check whether the value of k is equal to the value of m but k is a string and m is a number so it will convert k to a number and then compare it with m and give the result = true
+console.log("k === m =", k === m); // it will check whether the value of k is equal to the value of m and also the data type of k is equal to the data type of m or not => false
 console.log("x > z =", x > z); // it will check whether x is greater than z or not => false
 console.log("x < z =", x < z); // it will check whether x is less than z or not => true
 console.log("x >= z =", x >= z); // it will check whether x is greater than or equal to z or not => false
 console.log("x <= z =", x <= z); // it will check whether x is less than or equal to z or not => true
 console.log("z == s =", z == s); // it will check whether the value of z is equal to the value of s or not => false
+console.log("z === m =", z === m); // it will check whether the value of z is equal to the value of m and also the data type of z is equal to the data type of m or not => true
+console.log("z != m =", z != m); // it will check whether the value of z is not equal to the value of m or not => false
+console.log("z !== m =", z !== m); // it will check whether the value of z is not equal to the value of m or the data type of z is not equal to the data type of m or not => false
 console.log("z != s =", z != s); // it will check whether the value of z is not equal to the value of s or not => true
 console.log("z === s =", z === s); // it will check whether the value of z is equal to the value of s and also the data type of z is equal to the data type of s or not => false
 console.log("z !== s =", z !== s); // it will check whether the value of z is not equal to the value of s or the data type of z is not equal to the data type of s or not => true
@@ -60,6 +67,25 @@ console.log("u == t =", u == t); // it will check whether the value of u is equa
 console.log("u != t =", u != t); // it will check whether the value of u is not equal to the value of t or not => false
 console.log("u === t =", u === t); // it will check whether the value of u is equal to the value of t and also the data type of u is equal to the data type of t or not => false
 console.log("u !== t =", u !== t); // it will check whether the value of u is not equal to the value of t or the data type of u is not equal to the data type of t or not => true  
+
+//logical operators
+
+let p = true;
+let q = false;
+let ab = 5;
+let ba = 10;
+
+console.log ("p && q =", p && q); // it will check whether both p and q are true or not => false
+console.log("p || q =", p || q); // it will check whether either p or q is true or not => true
+console.log("!p =", !p); // it will give the opposite of p => false
+console.log("!q =", !q); // it will give the opposite of q => true
+console.log("ab > ba && p =", ab > ba && p); // it will check whether ab is greater than ba and p is true or not => false
+console.log("ab < ba || q =", ab < ba || q); // it will check whether ab is less than ba or q is true or not => true
+console.log("!(ab == ba) =", !(ab == ba)); // it will check whether ab is equal to ba or not and then give the opposite of that => true
+console.log("p && q =", p && q); // it will check whether both p and q are true or not => false
+console.log("p || q =", p || q); // it will check whether either p or q is true or not => true
+console.log("!p =", !p); // it will give the opposite of p => false
+console.log("!q =", !q); // it will give the opposite of q => true  
 
 
 
