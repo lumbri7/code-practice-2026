@@ -4,6 +4,7 @@ const instaProfile = {
     followers: 284,
     following: 45,
     posts: 7,
+    isFOllow: true,
     bio: "Living on the Event Horizon",
 }
 console.log(instaProfile);

@@ -8,5 +8,5 @@ if(num % num2 === 0){
         console.log(num,"is not a multiple of",num2);
     }
 
-    
 
+    //mujhe aati hai ye conditional statements c language me seekhi thi 
