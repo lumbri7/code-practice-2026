@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-    int frommmmm,to;
+    int from,to;
     int sum = 0;
 
     cout << "Find sum from n to n numbers." << endl;
