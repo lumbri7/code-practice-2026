@@ -1,25 +1,22 @@
+
+//ye maine ai se banya hai 
+
 #include<iostream>
 #include<string>
-
-
 class BankAcount{
-
 private:
     std::string accountNumber;
     std::string accountHolderName;
     double balance;
-
 public:
     BankAcount(std::string accNo, std::string name, double bal){
         accountNumber = accNo;
         accountHolderName = name;
         balance = bal;
     }
-
     void deposit(double amount){
         if(amount <= 0){
-            std::cout << "Invalid deposit amount!" << std::endl;
-            
+            std::cout << "Invalid deposit amount!" << std::endl;       
         }
         balance += amount;
         std::cout << "Amount deposited successfully." << std::endl;

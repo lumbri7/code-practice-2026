@@ -8,9 +8,15 @@ int main(){
     std::cout << "Enter a number: ";
     std::cin >> num;
 
+    if(num <= 1){
+        std::cout << num << " is neither prime nor composite" << std::endl;
+        return 0;
+    }
+
     for(int i = 2; i <= num - 1; i++){
         if(num % i == 0){
             isPrime = false;
+            break;
         }
     }
     if(isPrime == true){
