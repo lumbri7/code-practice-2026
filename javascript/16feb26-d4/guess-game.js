@@ -1,0 +1,2 @@
+let secNum;
+let guessed;

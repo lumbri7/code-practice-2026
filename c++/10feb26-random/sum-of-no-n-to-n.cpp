@@ -17,12 +17,10 @@ int main(){
         swap(to, from);
         cout << "Your entered numbers are swaped!" << endl;
     }
-
     for(int i = from; i <= to; i++){
         sum = sum += i;
     }
     cout << "Sum from " << from << " to " << to << " is = "<< sum << endl;
 
-
-
+    return 0;
 }
