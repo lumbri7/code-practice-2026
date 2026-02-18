@@ -1,17 +1,17 @@
 #include<iostream>
+#include<string>
+
 using namespace std;
 
 class emp{
 
-public:
-    char work;
-    float attendance;
-
-private:
+    private:
     int salary;
 
 public:
+    string work;
 
+    float attendance;
 
     void setsal(int salary){
         this->salary = salary;
@@ -21,6 +21,13 @@ public:
         return salary;
     }
 
+
+    emp(string work, float attendance){
+        this->work = work;
+        this->attendance = attendance;
+    }
+
+
     void display(){
         cout << "Employee work: " << work << endl;
         cout << "Attendance: " << attendance << endl;
@@ -28,10 +35,9 @@ public:
     }
 };
 int main(){
-    emp e1;
-    e1.work = 'A';
-    e1.attendance = 78.5;
-    e1.setsal(28000);
+    // emp e1('A', 79.5);
+    emp e1("Data Entry", 89.6);
+    e1.setsal(20000);
     e1.display();
 
     return 0;
