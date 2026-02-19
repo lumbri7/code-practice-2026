@@ -5,12 +5,11 @@ using namespace std;
 
 class emp{
 
-    private:
+    public:
     int salary;
 
-public:
+    private:
     string work;
-
     float attendance;
 
     void setsal(int salary){
