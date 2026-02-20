@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> ertwhetjhweojthewjo
 #include <string>
 
 class Student {
@@ -40,11 +40,9 @@ int main() {
     Student s1("Nitin", "2025BCAPTU121", "7889092426");
     Student s2("Himanshu", "2025BCAPTU125", "8978234224");
     Student s3("Ritik", "2025BCAPTU119","7856328956");
-    // s1.getInfo();
-    s1.updateName("Nitin Kumar");
+    s1.getInfo();
     // Student s4(s1);
     // s1.getInfo();
-    std::cout << s1.rollno << std::endl;
 
     
     return 0;
