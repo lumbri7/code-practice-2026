@@ -8,7 +8,6 @@ class Student {
 public:    
     string name;
 
-
 private:    
     string phNo;
     public:

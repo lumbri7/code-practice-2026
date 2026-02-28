@@ -1,14 +1,15 @@
-
-//ye maine ai se banya hai 
-
 #include<iostream>
 #include<string>
 class BankAcount{
+
 private:
+
     std::string accountNumber;
     std::string accountHolderName;
     double balance;
+
 public:
+
     BankAcount(std::string accNo, std::string name, double bal){
         accountNumber = accNo;
         accountHolderName = name;
@@ -45,8 +46,13 @@ public:
     std::string getAcountNumber(){
         return accountNumber;
     }
+
+    std::string getAccountHolderName(){
+        return accountHolderName;
+    }
 };
-int main(){
+    int main(){
+
     BankAcount acc1("1001","Nitin",10000);
     BankAcount acc2("1002","Dev",100);
     BankAcount* currentAcount = nullptr;

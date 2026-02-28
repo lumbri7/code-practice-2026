@@ -1,4 +1,4 @@
-#include <iostream> ertwhetjhweojthewjo
+#include <iostream>
 #include <string>
 
 class Student {
@@ -16,16 +16,16 @@ public:
         dept ="BCA";
         sem = "2nd";
         this->name = name;
-        this->rollno = rollno;
+        this->rollno = rollno;             
         this->phNo = phNo;
     }
 
     void getInfo(){
+        std::cout << "Phone:        " << phNo << std::endl;
         std::cout << "Student name: " << name << std::endl;
         std::cout << "Roll No:      " << rollno << std::endl;
         std::cout << "Department:   " << dept << std::endl;
         std::cout << "Semester:     " << sem << std::endl;
-        std::cout << "Phone:        " << phNo << std::endl;
     }
 
     void updateName(std::string name){
@@ -40,9 +40,10 @@ int main() {
     Student s1("Nitin", "2025BCAPTU121", "7889092426");
     Student s2("Himanshu", "2025BCAPTU125", "8978234224");
     Student s3("Ritik", "2025BCAPTU119","7856328956");
-    s1.getInfo();
-    // Student s4(s1);
-    // s1.getInfo();
+
+    s2.getInfo();
+    s2
+
 
     
     return 0;
