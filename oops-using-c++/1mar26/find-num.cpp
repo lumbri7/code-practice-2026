@@ -1,8 +1,6 @@
 #include<iostream>
 #include<climits>
 
-using namespace std;
-
 class Find {
     public:
     int lowest = INT_MAX;
@@ -11,14 +9,12 @@ class Find {
     int *nums, largest_index, lowest_index;
 
     void findNumber(){
-
-        cout << "Enter number of elements: ";
-        cin >> size;
+        std::cout << "Enter number of elements: ";
+        std::cin >> size;
         nums = new int[size];
-
-        cout << "Enter elements: ";
+        std::cout << "Enter elements: ";
         for(int i = 0; i < size; i++){
-            cin >> nums[i];
+            std::cin >> nums[i];
         }
         for(int j = 0; j < size; j++){
             if(nums[j] > largest){
@@ -32,8 +28,8 @@ class Find {
                 lowest_index = h;
             }
         }
-            cout << "Largest number : " << largest << " | Index number : " << largest_index << endl;
-            cout << "Lowest number  : " << lowest <<  " | Index number : " << lowest_index << endl;
+            std::cout << "Largest number : " << largest << " | Index number : " << largest_index << std::endl;
+            std::cout << "Lowest number  : " << lowest <<  " | Index number : " << lowest_index << std::endl;
     }
 };
 
