@@ -47,5 +47,5 @@ for (int i = 0; i < 3; i++) {
 }
 
 /*
-time
+time complexity of accessing an element in an array is O(1) because we can directly access any element using its index.
 */
