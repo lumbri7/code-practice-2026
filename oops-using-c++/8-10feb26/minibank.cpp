@@ -35,7 +35,7 @@ public:
         std::cout << "Amount withdrawn successfully." << std::endl;
     }
     void displayAcountDetails(){
-        std::cout << "\n--- Acount Details ---" << std::endl;
+        std::cout << "\n Acount Details" << std::endl;
         std::cout << "Account Holder :  " << accountHolderName << std::endl;
         std::cout << "Account Number :  " << accountNumber << std::endl;
         std::cout << "Balance        :  " << balance << std::endl;
@@ -53,8 +53,8 @@ public:
 };
     int main(){
 
-    BankAcount acc1("1001","Nitin",10000);
-    BankAcount acc2("1002","Dev",100);
+    BankAcount acc1("1001","Ritik",100);
+    BankAcount acc2("1002","Himanshu",100);
     BankAcount* currentAcount = nullptr;
     int choice;
     std::string accNo;
@@ -62,12 +62,14 @@ public:
     while(true){
         std::cout <<"Enter acount number (1001 ya fir 1002): ";
         std::cin >> accNo;
-        if(accNo == "1001")
+        if(accNo == "1001"){
         currentAcount = &acc1;
-        else if (accNo == "1002")
-        currentAcount == &acc2;
+        }
+        else if (accNo == "1002"){
+            currentAcount = &acc2;
+        }
         else{
-            std::cout << "Invalid acount number!" << std::endl;
+            std::cout << "Kya kar rha hai bhai sahi number daal na!" << std::endl;
             continue;
         }
         std::cout << "\nPress 1: For Deposit";
@@ -100,7 +102,7 @@ public:
                 std::cout << "Thank you for banking with us" << std::endl;
                 return 0;
             default:
-                std::cout << "Invalid choice!" << std::endl;
+                std::cout << "Sahi option select kar" << std::endl;
         }
     }
     return 0;
